@@ -36,8 +36,8 @@ export default function Clients() {
 				showDots
 				className='w-full max-w-7xl pb-12'>
 				{Array.from({ length: 20 }).map((_, index) => (
-					<div className='p-1'>
-						<Card key={index} className='border-none rounded-none'>
+					<div key={index} className='p-1'>
+						<Card className='border-none rounded-none'>
 							<CardContent className='flex items-center justify-center p-0'>
 								<Image className='w-auto h-20' alt='logo' src={`/images/logos/${index + 1}.png`} width={300} height={300} />
 							</CardContent>
