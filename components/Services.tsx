@@ -8,8 +8,8 @@ export default function Services() {
 		<SectionContainer className='bg-white w-full max-w-none'>
 			<Heading title='Our Services' />
 			{services.map((service, index) => (
-				<div className='flex flex-col'>
-					<div key={index} className='flex flex-col lg:flex-row py-10 gap-12 max-w-7xl'>
+				<div key={index} className='flex flex-col'>
+					<div className='flex flex-col lg:flex-row py-10 gap-12 max-w-7xl'>
 						<div className='flex flex-row gap-4 sm:gap-8'>
 							<div className='aspect-square max-w-72 max-h-72 lg:w-72 lg:h-72 flex flex-row overflow-hidden rounded-xl'>
 								<Image className='w-full h-full object-cover hover:scale-[120%] transition-transform duration-200' src={service.image} width={500} height={500} alt='Service Image' />
