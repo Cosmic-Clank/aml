@@ -5,6 +5,7 @@ import { Open_Sans } from "next/font/google";
 import { useState } from "react";
 import Link from "next/link";
 import Button from "./ui/ButtonCustom";
+import { IoMenu } from "react-icons/io5";
 
 const navigation = [
 	{ name: "Home", href: "#", current: false },
@@ -29,11 +30,11 @@ export default function Example() {
 	};
 
 	return (
-		<header className='w-full'>
-			<nav className='hidden lg:flex w-full h-full flex-row justify-between items-center px-44 py-12 z-50'>
+		<header className='w-full flex justify-center items-center px-6'>
+			<nav className='hidden lg:flex w-full h-full flex-row justify-between items-center max-w-screen-xl py-12 z-50'>
 				<div>
-					<Link href='/'>
-						<Image alt='Al Madena Landscape Logo' src='/images/logos/leaf-white.png' width={100} height={100} />
+					<Link href='/' className='overflow-hidden'>
+						<Image className='rounded-full' alt='Al Madena Landscape Logo' src='/images/logos/leaf-white.png' width={100} height={100} />
 					</Link>
 				</div>
 				<div className={`flex flex-row gap-10 uppercase transition-transform ${font.className} ${isExpanded ? "scale-100" : "scale-0"}`}>
@@ -47,16 +48,20 @@ export default function Example() {
 						))}
 					</ul>
 				</div>
-				<Button onClick={toggleNavbar} className='w-16 h-10 p-0' text='MENU' />
+				<button type='button' onClick={toggleNavbar} className='hover:text-green'>
+					<IoMenu size={50} />
+				</button>
 			</nav>
 
-			<nav className='relative lg:hidden flex flex-row justify-between items-center px-8 py-2 z-50'>
+			<nav className='relative lg:hidden flex w-full h-full flex-row justify-between items-center max-w-screen-xl py-12 z-50'>
 				<div>
-					<Link href='/'>
-						<Image alt='Al Madena Landscape Logo' src='/images/logos/leaf-white.png' width={100} height={100} />
+					<Link href='/' className='overflow-hidden'>
+						<Image className='rounded-full' alt='Al Madena Landscape Logo' src='/images/logos/leaf-white.png' width={100} height={100} />
 					</Link>
 				</div>
-				<Button onClick={toggleNavbar} className='w-16 h-10 p-0' text='MENU' />
+				<button type='button' onClick={toggleNavbar} className='hover:text-green'>
+					<IoMenu size={50} />
+				</button>
 
 				<div className={`fixed flex flex-col gap-20 justify-center items-center top-0 p-20 transition-transform transform bg-[#333333] h-screen text-white ${isExpanded ? "-translate-x-10" : "-translate-x-[120%]"}`}>
 					{navigation.map((item) => (

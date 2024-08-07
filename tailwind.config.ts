@@ -48,6 +48,8 @@ const config = {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))",
 				},
+				green: { DEFAULT: "#4D704D" },
+				gray: { DEFAULT: "#363535" },
 			},
 			borderRadius: {
 				lg: "var(--radius)",
@@ -67,6 +69,11 @@ const config = {
 			animation: {
 				"accordion-down": "accordion-down 0.2s ease-out",
 				"accordion-up": "accordion-up 0.2s ease-out",
+			},
+			backgroundImage: {
+				"testimonials-bg": "url('/images/testimonials-bg.jpg')",
+				"instagram-bg": "url('/images/instagram-page-bg.jpg')",
+				"footer-bg": "url('/images/footer-bg.jpg')",
 			},
 		},
 	},

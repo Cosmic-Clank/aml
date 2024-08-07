@@ -5,16 +5,21 @@ import Navbar from "@/components/Navbar";
 import Numbers from "@/components/Numbers";
 import Clients from "@/components/Clients";
 import Services from "@/components/Services";
-import Spacer from "@/components/ui/Spacer";
 import Vision from "@/components/Vision";
 import { Open_Sans } from "next/font/google";
-import WorkGallery from "@/components/WorkGallery";
+import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
+import Instagram from "@/components/Instagram";
+import CTA from "@/components/CTA";
+import Footer from "@/components/Footer";
+import Gallery from "@/components/Gallery";
+import Projects from "@/components/Projects";
 
 const font = Open_Sans({ subsets: ["latin"] });
 
 export default function Home() {
 	return (
-		<main className={`flex flex-col items-center justify-center bg-zinc-100 ${font.className}`}>
+		<main className={`flex flex-col items-center justify-center bg-zinc-100 overflow-hidden ${font.className}`}>
 			<Navbar />
 			<Hero />
 			<About />
@@ -23,7 +28,13 @@ export default function Home() {
 			<Mission />
 			<Services />
 			<Clients />
-			<WorkGallery />
+			<Gallery />
+			<Projects />
+			<Testimonials />
+			<Instagram />
+			<CTA />
+			<Contact />
+			<Footer />
 		</main>
 	);
 }

@@ -1,61 +1,36 @@
 "use client";
 import Image from "next/image";
-import React, { useState, useRef, useEffect } from "react";
-import SimpleParallax from "simple-parallax-js";
 import SectionContainer from "./ui/SectionContainer";
-import Button from "./ui/ButtonCustom";
 import Heading from "./ui/Heading";
-import BgImage from "@/public/images/services/bg.jpg";
 
 export default function Services() {
 	return (
-		<>
-			<div className='hidden md:flex relative w-full sm:h-[320rem] md:h-[300rem] lg:h-[180rem] xl:h-[140rem] flex-col justify-center items-center'>
-				<SimpleParallax orientation='down' scale={2}>
-					<Image className='relative w-screen sm:h-[320rem] md:h-[300rem] lg:h-[180rem] xl:h-[140rem] object-cover' src='/images/services/bg.jpg' alt='image' width={3000} height={3000} />
-				</SimpleParallax>
-				<div className='absolute w-full h-full bg-green-800 opacity-55'></div>
-				<SectionContainer className='absolute z-10'>
-					<Heading className='text-white' title='Our Services' />
-					<div className={`grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-full h-full gap-20`}>
-						{cards.map((card, index) => (
-							<div key={index} className='flex flex-col bg-white rounded-2xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl'>
-								<div className='w-full h-36 overflow-hidden'>
-									<Image className='w-full h-full object-cover' src={card.image} alt='image' width={1000} height={1000} />
-								</div>
-								<div className='p-6'>
-									<h1 className='text-2xl mb-4'>{card.title}</h1>
-									<p className='text-base text-gray-600'>{card.description}</p>
-								</div>
+		<SectionContainer className='bg-white w-full max-w-none'>
+			<Heading title='Our Services' />
+			{services.map((service, index) => (
+				<div className='flex flex-col'>
+					<div key={index} className='flex flex-col lg:flex-row py-10 gap-12 max-w-7xl'>
+						<div className='flex flex-row gap-4 sm:gap-8'>
+							<div className='aspect-square max-w-72 max-h-72 lg:w-72 lg:h-72 flex flex-row overflow-hidden rounded-xl'>
+								<Image className='w-full h-full object-cover hover:scale-[120%] transition-transform duration-200' src={service.image} width={500} height={500} alt='Service Image' />
 							</div>
-						))}
-					</div>
-				</SectionContainer>
-			</div>
-			<div className='relative block md:hidden' style={{ backgroundImage: "url('/images/services/bg.jpg')", backgroundPosition: "center center" }}>
-				<div className='absolute w-full h-full bg-green-800 opacity-30' />
-				<SectionContainer className='z-10'>
-					<Heading className='text-white' title='Our Services' />
-					<div className={`grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 w-full h-full gap-20`}>
-						{cards.map((card, index) => (
-							<div key={index} className='flex flex-col bg-white rounded-2xl overflow-hidden'>
-								<div className='w-full h-36 overflow-hidden'>
-									<Image className='w-full h-full object-cover' src={card.image} alt='image' width={1000} height={1000} />
-								</div>
-								<div className='p-6'>
-									<h1 className='text-2xl mb-4'>{card.title}</h1>
-									<p className='text-base text-gray-600'>{card.description}</p>
-								</div>
+							<div className=' aspect-square max-w-72 max-h-72 lg:w-72 lg:h-72 flex flex-row overflow-hidden rounded-xl'>
+								<Image className='w-full h-full object-cover hover:scale-[120%] transition-transform duration-200' src={service.image} width={500} height={500} alt='Service Image' />
 							</div>
-						))}
+						</div>
+						<div className=''>
+							<h3 className='text-xl mb-4'>{service.title}</h3>
+							<p className='text-gray-500'>{service.description}</p>
+						</div>
 					</div>
-				</SectionContainer>
-			</div>
-		</>
+					<hr className='border-gray-400' />
+				</div>
+			))}
+		</SectionContainer>
 	);
 }
 
-const cards = [
+const services = [
 	{
 		title: "GARDEN DESIGN",
 		description: "Whether you seek to transform a small space to include lovely plants and flowers or want to build a grand outdoor garden to entertain in, the professional designers at AML are ready to help bring your vision to life.",

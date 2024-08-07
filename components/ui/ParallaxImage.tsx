@@ -21,7 +21,7 @@ function ParallaxImage({ image, text, className }: { image: string; text?: strin
 	return (
 		<>
 			<motion.div className={cn("relative overflow-hidden w-full h-[50vh]", className)} style={{ translateY: backgroundY }}>
-				<Image className='absolute bottom-0 w-full h-full object-cover' src={image} alt='Hero' width={"2000"} height={"2000"} />
+				<Image className='absolute bottom-0 w-full h-full object-cover' src={image} alt='parallax background' width={"2000"} height={"2000"} />
 			</motion.div>
 			<div>
 				<h1 className='uppercase text-2xl md:text-5xl lg:text-7xl font-bold tracking-widest text-center text-white'>{text}</h1>
