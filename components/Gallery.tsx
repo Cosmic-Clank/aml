@@ -19,11 +19,11 @@ const Gallery = () => {
 		<SectionContainer className='max-w-none flex justify-center items-center'>
 			<Heading title='Gallery' />
 			<div className='max-w-7xl md:block hidden'>
-				<ImageList className='overflow-hidden' variant='quilted' cols={8} rowHeight={121} gap={1}>
+				<ImageList className='overflow-hidden' variant='quilted' cols={8} rowHeight={121} gap={0}>
 					{itemData.map((item) => (
 						<ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
 							<Link href={item.img} className='w-full h-full'>
-								<Image className='w-full h-full object-cover transition-transform hover:scale-125' width={500} height={500} {...srcset(item.img, 121, item.rows, item.cols)} alt={item.title} />
+								<Image className='w-full h-full object-cover transition-transform' width={500} height={500} {...srcset(item.img, 121, item.rows, item.cols)} alt={item.title} />
 							</Link>
 						</ImageListItem>
 					))}
@@ -34,7 +34,7 @@ const Gallery = () => {
 					{itemData.map((item) => (
 						<ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
 							<Link href={item.img} className='w-full h-full'>
-								<Image className='w-full h-full object-cover transition-transform hover:scale-125' width={500} height={500} {...srcset(item.img, 121, item.rows, item.cols)} alt={item.title} />
+								<Image className='w-full h-full object-cover transition-transform' width={500} height={500} {...srcset(item.img, 121, item.rows, item.cols)} alt={item.title} />
 							</Link>
 						</ImageListItem>
 					))}

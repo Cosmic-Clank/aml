@@ -33,6 +33,9 @@ export default function Testimonials() {
 					showDots
 					dotListClass='[&>*]:[&>*]:bg-gray-600 [&>*]:[&>*]:bg-opacity-50'
 					arrows={false}
+					autoPlay={true}
+					autoPlaySpeed={2000}
+					infinite={true}
 					className='w-full max-w-7xl'>
 					{testimonials.map((testimonial, index) => (
 						<div className='p-1' key={index}>

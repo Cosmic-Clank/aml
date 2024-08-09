@@ -7,16 +7,16 @@ const Projects = () => {
 	return (
 		<SectionContainer>
 			<Heading title='Projects' />
-			<div className='flex flex-wrap gap-x-4 gap-y-6 justify-center items-center'>
+			<div className='flex flex-wrap gap-x-4 gap-y-6 justify-center items-center mb-12'>
 				{itemData.map((item) => (
 					<div key={item.title} className='w-96'>
-						<div className='relative overflow-hidden'>
+						<div className='relative rounded-lg overflow-hidden'>
 							<Image width={500} height={500} src={item.image} alt={item.title} className='w-full h-full object-cover transition-transform hover:scale-125' />
 							<div className='absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 transition-opacity hover:opacity-100'>
 								<h3 className='text-white text-lg font-bold'>{item.title}</h3>
 							</div>
 						</div>
-						<h3 className='text-sm  tracking-wide mt-4'>{item.title}</h3>
+						<h3 className='text-sm tracking-wide mt-4'>{item.title}</h3>
 					</div>
 				))}
 			</div>
