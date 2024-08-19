@@ -28,13 +28,13 @@ const Numbers = () => {
 		};
 	}, []);
 	return (
-		<section ref={ref} className='min-h-96 flex items-center justify-center bg-white w-full py-20 px-12'>
+		<section ref={ref} className='min-h-96 flex items-center justify-center bg-white w-full py-44 px-12'>
 			{inView && (
 				<div className='flex flex-col lg:flex-row gap-32 text-center'>
 					{numbers.map((num, index) => (
 						<div key={index} className='flex flex-col items-center justify-center bg-green w-64 h-64 rounded-full shadow-harsh'>
 							<CountUp className='text-4xl font-bold text-white rounded-full' suffix='+' start={0} end={num.number} duration={5} />
-							<p className='text-2xl text-white uppercase p-2 tracking-wider'>{num.text}</p>
+							<p dangerouslySetInnerHTML={{ __html: num.text }} className='text-2xl text-white uppercase p-2 tracking-wider' />
 						</div>
 					))}
 				</div>
@@ -44,7 +44,7 @@ const Numbers = () => {
 };
 
 const numbers = [
-	{ number: 120, text: "Satisfied Clients" },
+	{ number: 120, text: "Satisfied<br /> Clients" },
 	{ number: 12, text: "Years of experience" },
 	{ number: 200, text: "Projects Completed" },
 ];

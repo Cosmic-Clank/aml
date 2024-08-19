@@ -30,11 +30,11 @@ const Contact = () => {
 		resolver: zodResolver(formSchema),
 	});
 	return (
-		<SectionContainer>
+		<SectionContainer className='w-full max-w-none'>
 			<Heading title='Contact Us' />
-			<div className='flex flex-col lg:flex-row gap-20'>
+			<div className='flex flex-col lg:flex-row justify-center gap-40 w-full'>
 				<div className='flex flex-col gap-6'>
-					<iframe className='rounded-2xl' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.7592215406694!2d55.384523400000006!3d25.278683899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6108f4d41dfb%3A0xabd10ab959eca4f6!2sLoloat%20Al%20MadenaTechnical%20Services%20LLC!5e0!3m2!1sen!2sae!4v1722882959371!5m2!1sen!2sae' width='400' height='300' loading='lazy' />
+					<iframe className='rounded-2xl w-full' src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.7592215406694!2d55.384523400000006!3d25.278683899999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6108f4d41dfb%3A0xabd10ab959eca4f6!2sLoloat%20Al%20MadenaTechnical%20Services%20LLC!5e0!3m2!1sen!2sae!4v1722882959371!5m2!1sen!2sae' width='450' height='350' loading='lazy' />
 					<div className='flex flex-col text-center lg:text-left'>
 						<h2 className='text-lg font-semibold text-black uppercase'>Address</h2>
 						<span className='flex flex-row gap-2 items-center justify-center lg:justify-start'>
@@ -74,7 +74,7 @@ const Contact = () => {
 				<div className='flex flex-col'>
 					<p className='text-lg text-center text-black uppercase mb-8'>Leave us a message</p>
 					<Form {...form}>
-						<form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
+						<form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8 lg:w-[30rem]'>
 							<FormField
 								control={form.control}
 								name='name'
