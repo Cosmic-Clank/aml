@@ -30,7 +30,7 @@ const Numbers = () => {
 	return (
 		<section ref={ref} className='min-h-96 flex items-center justify-center bg-white w-full py-20 px-12'>
 			{inView && (
-				<div className='flex flex-col lg:flex-row gap-20 text-center'>
+				<div className='flex flex-col lg:flex-row gap-32 text-center'>
 					{numbers.map((num, index) => (
 						<div key={index} className='flex flex-col items-center justify-center bg-green w-64 h-64 rounded-full shadow-harsh'>
 							<CountUp className='text-4xl font-bold text-white rounded-full' suffix='+' start={0} end={num.number} duration={5} />

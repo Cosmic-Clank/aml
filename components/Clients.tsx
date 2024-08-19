@@ -36,9 +36,9 @@ export default function Clients() {
 				showDots
 				arrows={false}
 				dotListClass='color-white'
-				className='w-full max-w-7xl pb-12 px-6 shadow-none'>
+				className='w-full pb-12 px-6 shadow-none'>
 				{Array.from({ length: 20 }).map((_, index) => (
-					<div key={index} className='p-1'>
+					<div key={index} className=''>
 						<Card className='border-none rounded-none shadow-none'>
 							<CardContent className='flex items-center justify-center p-0'>
 								<Image className='w-auto h-20' alt='logo' src={`/images/logos/${index + 1}.png`} width={300} height={300} />
