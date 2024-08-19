@@ -75,6 +75,9 @@ const config = {
 				"instagram-bg": "url('/images/instagram-page-bg.jpg')",
 				"footer-bg": "url('/images/footer-bg.jpg')",
 			},
+			boxShadow: {
+				harsh: "15px 15px 0px 0px rgba(0, 0, 0, 0.3);",
+			},
 		},
 	},
 	plugins: [require("tailwindcss-animate")],

@@ -23,18 +23,18 @@ const Hero = () => {
 		setIndex(selectedIndex);
 	};
 	return (
-		<SectionContainer className={cn(`relative w-full lg:h-[70vh] flex flex-col justify-center items-center pt-0`, font.className)}>
-			<div className='flex flex-col lg:flex-row gap-12'>
-				<div className='flex flex-col justify-end gap-12 max-w-3xl'>
+		<SectionContainer className={cn(`relative w-full flex flex-col justify-center items-center bg-green max-w-none pt-60`, font.className)}>
+			<div className='flex flex-col lg:flex-row gap-12 max-w-7xl'>
+				<div className='flex flex-col justify-center gap-12 max-w-3xl'>
+					<p className='text-white text-xl tracking-widest'>15 YEARS IN DUBAI</p>
 					<div className='tracking-widest space-y-6'>
-						{/* <p className='text-green font-semibold text-xl'>LOLAT</p> */}
-						<h1 className='text-green font-semibold text-4xl'>AL MADINA LANDSCAPE</h1>
+						<h1 className='text-white font-semibold text-4xl tracking-widest'>AL MADINA LANDSCAPE</h1>
 						{/* <p className='text-green font-semibold text-xl'>SERVICES</p> */}
 					</div>
-					<div className='text-green tracking-widest font-semibold'>SERVING THE EVER-EVOLVING CITY OF DUBAI SINCE MORE THAN A DECADE COVERING ALL AREAS OF LANDSCAPING SERVICES FROM COMPLETE MAKEOVERS TO MAINTAINING COMMERCIAL OR INDIVIDUAL LANDSCAPES.</div>
-					<SocialIcons className='justify-start text-green' />
+					<p className='text-white tracking-widest'>SERVING THE EVER-EVOLVING CITY OF DUBAI SINCE MORE THAN A DECADE COVERING ALL AREAS OF LANDSCAPING SERVICES FROM COMPLETE MAKEOVERS TO MAINTAINING COMMERCIAL OR INDIVIDUAL LANDSCAPES.</p>
+					<SocialIcons className='justify-start text-white' />
 				</div>
-				<div className='rounded-3xl overflow-hidden'>
+				<div className='rounded-3xl overflow-hidden shadow-harsh'>
 					<ImageGallery showBullets autoPlay showFullscreenButton={false} showPlayButton={false} showNav={false} items={images} />
 				</div>
 			</div>

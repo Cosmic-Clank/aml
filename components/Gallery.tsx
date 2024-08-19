@@ -16,21 +16,21 @@ function srcset(image: string, size: number, rows = 1, cols = 1) {
 
 const Gallery = () => {
 	return (
-		<SectionContainer className='max-w-none flex justify-center items-center'>
-			<Heading title='Gallery' />
-			<div className='max-w-7xl md:block hidden'>
-				<ImageList className='overflow-hidden' variant='quilted' cols={8} rowHeight={121} gap={0}>
+		<SectionContainer className='max-w-none flex justify-center items-center p-0'>
+			{/* <Heading title='Gallery' /> */}
+			<div className='w-full lg:block hidden'>
+				<ImageList className='overflow-hidden' variant='quilted' cols={8} rowHeight={240} gap={0}>
 					{itemData.map((item) => (
 						<ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
 							<Link href={item.img} className='w-full h-full'>
-								<Image className='w-full h-full object-cover transition-transform' width={500} height={500} {...srcset(item.img, 121, item.rows, item.cols)} alt={item.title} />
+								<Image className='w-full h-full object-cover transition-transform' width={1000} height={1000} {...srcset(item.img, 240, item.rows, item.cols)} alt={item.title} />
 							</Link>
 						</ImageListItem>
 					))}
 				</ImageList>
 			</div>
-			<div className='max-w-7xl block md:hidden'>
-				<ImageList className='overflow-hidden' variant='quilted' cols={4} rowHeight={121} gap={1}>
+			<div className='block lg:hidden'>
+				<ImageList className='overflow-hidden' variant='quilted' cols={6} rowHeight={121} gap={0}>
 					{itemData.map((item) => (
 						<ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
 							<Link href={item.img} className='w-full h-full'>

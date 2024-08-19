@@ -32,9 +32,9 @@ const Numbers = () => {
 			{inView && (
 				<div className='flex flex-col lg:flex-row gap-20 text-center'>
 					{numbers.map((num, index) => (
-						<div key={index} className='flex flex-col items-center justify-center bg-green w-64 h-64 rounded-full'>
-							<CountUp className='text-3xl font-bold text-white rounded-full' suffix='+' start={0} end={num.number} duration={5} />
-							<p className='text-3xl font-bold text-white'>{num.text}</p>
+						<div key={index} className='flex flex-col items-center justify-center bg-green w-64 h-64 rounded-full shadow-harsh'>
+							<CountUp className='text-4xl font-bold text-white rounded-full' suffix='+' start={0} end={num.number} duration={5} />
+							<p className='text-2xl text-white uppercase p-2 tracking-wider'>{num.text}</p>
 						</div>
 					))}
 				</div>
@@ -44,9 +44,9 @@ const Numbers = () => {
 };
 
 const numbers = [
-	{ number: 120, text: "Happy Clients" },
+	{ number: 120, text: "Satisfied Clients" },
 	{ number: 12, text: "Years of experience" },
-	{ number: 200, text: "Projects" },
+	{ number: 200, text: "Projects Completed" },
 ];
 
 export default Numbers;
