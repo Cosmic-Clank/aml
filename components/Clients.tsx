@@ -16,8 +16,8 @@ export default function Clients() {
 				responsive={{
 					desktop: {
 						breakpoint: { max: 3000, min: 1024 },
-						items: 5,
-						slidesToSlide: 5, // optional, default to 1.
+						items: 4,
+						slidesToSlide: 4, // optional, default to 1.
 					},
 					tablet: {
 						breakpoint: { max: 1024, min: 464 },
@@ -36,7 +36,7 @@ export default function Clients() {
 				showDots
 				arrows={false}
 				dotListClass='color-white'
-				className='w-full pb-12 shadow-none'>
+				className='w-full max-w-7xl pb-12 px-6 shadow-none'>
 				{Array.from({ length: 20 }).map((_, index) => (
 					<div key={index} className='p-1'>
 						<Card className='border-none rounded-none shadow-none'>

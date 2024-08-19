@@ -37,7 +37,7 @@ export default function Example() {
 
 	return (
 		<header className={`fixed top-0 z-50 w-full flex justify-center items-center px-6 bg-green transition-all duration-200 py-12 ${isScrolled ? "py-6" : ""}  ${font.className}`}>
-			<nav className='hidden lg:flex w-full h-full flex-row justify-between items-center max-w-screen-2xl z-50'>
+			<nav className='hidden lg:flex w-full h-full flex-row justify-between items-center max-w-7xl z-50'>
 				<div>
 					<Link href='/' className='overflow-hidden'>
 						<Image className='rounded-full' alt='Al Madena Landscape Logo' src='/images/logos/logo-2.png' width={300} height={300} />

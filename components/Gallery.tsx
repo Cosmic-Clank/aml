@@ -23,7 +23,7 @@ const Gallery = () => {
 					{itemData.map((item) => (
 						<ImageListItem key={item.img} cols={item.cols || 1} rows={item.rows || 1}>
 							<Link href={item.img} className='w-full h-full'>
-								<Image className='w-full h-full object-cover transition-transform' width={1000} height={1000} {...srcset(item.img, 240, item.rows, item.cols)} alt={item.title} />
+								<Image className='w-full h-full object-cover transition-transform hover:scale-95' width={1000} height={1000} {...srcset(item.img, 240, item.rows, item.cols)} alt={item.title} />
 							</Link>
 						</ImageListItem>
 					))}

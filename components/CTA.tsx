@@ -4,7 +4,7 @@ import Button from "./ui/ButtonCustom";
 
 const CTA = () => {
 	return (
-		<SectionContainer className='w-screen h-96 max-w-none bg-[#373c1e]'>
+		<SectionContainer className='w-screen h-96 max-w-none bg-green'>
 			<div className='flex flex-col items-center justify-center space-y-10'>
 				<h2 className='text-sm text-white uppercase tracking-widest'>Have a project in mind? Schedule a consult</h2>
 			</div>

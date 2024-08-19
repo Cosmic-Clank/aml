@@ -76,7 +76,7 @@ const config = {
 				"footer-bg": "url('/images/footer-bg.jpg')",
 			},
 			boxShadow: {
-				harsh: "15px 15px 0px 0px rgba(0, 0, 0, 0.3);",
+				harsh: "18px 18px 0px 0px rgba(0, 0, 0, 0.2);",
 			},
 		},
 	},
