@@ -6,7 +6,6 @@ import SocialIcons from "./ui/SocialIcons";
 import Lenis from "lenis";
 import ImageGallery from "react-image-gallery";
 import { cn } from "@/lib/utils";
-const font = Niramit({ subsets: ["latin"], weight: "400" });
 
 const Hero = () => {
 	useEffect(() => {
@@ -23,7 +22,7 @@ const Hero = () => {
 		setIndex(selectedIndex);
 	};
 	return (
-		<SectionContainer className={cn(`relative w-full flex flex-col justify-center items-center bg-green max-w-none pt-60`, font.className)}>
+		<SectionContainer id='home' className={cn(`relative w-full flex flex-col justify-center items-center bg-green max-w-none pt-60`)}>
 			<div className='flex flex-col lg:flex-row gap-12 max-w-7xl'>
 				<div className='flex flex-col justify-center gap-12 max-w-3xl'>
 					<p className='text-white text-xl tracking-widest'>15 YEARS IN DUBAI</p>

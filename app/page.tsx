@@ -6,7 +6,7 @@ import Numbers from "@/components/Numbers";
 import Clients from "@/components/Clients";
 import Services from "@/components/Services";
 import Vision from "@/components/Vision";
-import { Open_Sans } from "next/font/google";
+import { Alata } from "next/font/google";
 import Testimonials from "@/components/Testimonials";
 import Contact from "@/components/Contact";
 import Instagram from "@/components/Instagram";
@@ -14,8 +14,12 @@ import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import Projects from "@/components/Projects";
+import WhatsappWidget from "@/components/WhatsappWidget";
 
-const font = Open_Sans({ subsets: ["latin"] });
+const font = Alata({
+	subsets: ["latin"],
+	weight: "400",
+});
 
 export default function Home() {
 	return (
@@ -24,17 +28,18 @@ export default function Home() {
 			<Hero />
 			<About />
 			<Numbers />
+			<Gallery />
 			<Vision />
 			<Mission />
 			<Services />
 			<Clients />
-			<Gallery />
 			<Projects />
 			<Testimonials />
 			<Instagram />
 			<CTA />
 			<Contact />
 			<Footer />
+			<WhatsappWidget />
 		</main>
 	);
 }

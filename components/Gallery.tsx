@@ -16,7 +16,7 @@ function srcset(image: string, size: number, rows = 1, cols = 1) {
 
 const Gallery = () => {
 	return (
-		<SectionContainer className='max-w-none flex justify-center items-center px-0 bg-white'>
+		<SectionContainer id='gallery' className='max-w-none flex justify-center items-center px-0 bg-white'>
 			{/* <Heading title='Gallery' /> */}
 			<div className='w-full lg:block hidden'>
 				<ImageList className='overflow-hidden' variant='quilted' cols={8} rowHeight={240} gap={0}>

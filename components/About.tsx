@@ -8,7 +8,7 @@ const grid_images = ["/images/about1.jpg", "/images/about2.jpg", "/images/about3
 
 const About = () => {
 	return (
-		<SectionContainer className='flex flex-col justify-center items-center gap-8 bg-[#f6f6f6]'>
+		<SectionContainer id='about' className='flex flex-col justify-center items-center gap-8 bg-[#f6f6f6]'>
 			<div className='flex flex-col-reverse md:flex-row justify-between items-center gap-16'>
 				<div className='grid grid-cols-2 gap-12 min-w-96 min-h-96'>
 					{grid_images.map((image, index) => (

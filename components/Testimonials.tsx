@@ -9,8 +9,8 @@ import "react-multi-carousel/lib/styles.css";
 
 export default function Testimonials() {
 	return (
-		<SectionContainer className='w-full bg-white max-w-none bg-testimonials-bg bg-fixed px-0 py-0'>
-			<div className='w-full h-full flex flex-col justify-center items-center bg-green bg-opacity-85 px-10 py-20 '>
+		<SectionContainer id='testimonials' className='w-full bg-white max-w-none bg-testimonials-bg bg-fixed px-0 py-0'>
+			<div className='w-full h-full flex flex-col justify-center items-center bg-green bg-opacity-85 px-10 py-32 '>
 				<Heading title='Testimonials' className='text-white' />
 				<Carousel
 					responsive={{

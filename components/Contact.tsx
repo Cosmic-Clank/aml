@@ -30,7 +30,7 @@ const Contact = () => {
 		resolver: zodResolver(formSchema),
 	});
 	return (
-		<SectionContainer className='w-full max-w-none'>
+		<SectionContainer id='contact' className='w-full max-w-none'>
 			<Heading title='Contact Us' />
 			<div className='flex flex-col lg:flex-row justify-center gap-40 w-full'>
 				<div className='flex flex-col gap-6'>

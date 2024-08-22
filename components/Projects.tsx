@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Projects = () => {
 	return (
-		<SectionContainer>
+		<SectionContainer id='projects'>
 			<Heading title='Projects' />
 			<div className='flex flex-wrap gap-x-4 gap-y-6 justify-center items-center mb-12 '>
 				{itemData.map((item) => (

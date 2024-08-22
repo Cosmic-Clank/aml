@@ -5,7 +5,7 @@ import Heading from "./ui/Heading";
 
 export default function Services() {
 	return (
-		<SectionContainer className='bg-white w-full max-w-none'>
+		<SectionContainer id='services' className='bg-white w-full max-w-none'>
 			<Heading title='Our Services' />
 			{services.map((service, index) => (
 				<div key={index} className='flex flex-col'>
