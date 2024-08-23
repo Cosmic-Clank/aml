@@ -44,7 +44,7 @@ const Numbers = () => {
 };
 
 const numbers = [
-	{ number: 120, text: "Satisfied<br /> Clients" },
+	{ number: 200, text: "Satisfied<br /> Clients" },
 	{ number: 12, text: "Years of experience" },
 	{ number: 200, text: "Projects Completed" },
 ];

@@ -22,8 +22,8 @@ const Hero = () => {
 		setIndex(selectedIndex);
 	};
 	return (
-		<SectionContainer id='home' className={cn(`relative w-full flex flex-col justify-center items-center bg-green max-w-none pt-60`)}>
-			<div className='flex flex-col lg:flex-row gap-12 max-w-7xl'>
+		<SectionContainer id='home' className={cn(`relative w-full flex flex-col justify-center items-center bg-green max-w-none pt-52`)}>
+			<div className='flex flex-col lg:flex-row gap-12 max-w-7xl items-center'>
 				<div className='flex flex-col justify-center gap-12 max-w-3xl'>
 					<p className='text-white text-xl tracking-widest'>15 YEARS IN DUBAI</p>
 					<div className='tracking-widest space-y-6'>
@@ -33,7 +33,7 @@ const Hero = () => {
 					<p className='text-white tracking-widest'>SERVING THE EVER-EVOLVING CITY OF DUBAI SINCE MORE THAN A DECADE COVERING ALL AREAS OF LANDSCAPING SERVICES FROM COMPLETE MAKEOVERS TO MAINTAINING COMMERCIAL OR INDIVIDUAL LANDSCAPES.</p>
 					<SocialIcons className='justify-start text-white' />
 				</div>
-				<div className='rounded-3xl overflow-hidden shadow-harsh'>
+				<div className='rounded-3xl overflow-hidden shadow-harsh max-w-96'>
 					<ImageGallery showBullets autoPlay showFullscreenButton={false} showPlayButton={false} showNav={false} items={images} />
 				</div>
 			</div>
@@ -43,10 +43,13 @@ const Hero = () => {
 
 const images = [
 	{
-		original: "/images/hero/hero-4.jpg",
+		original: "/images/hero/hero-1.jpg",
 	},
 	{
-		original: "/images/hero/hero-4.jpg",
+		original: "/images/hero/hero-2.jpg",
+	},
+	{
+		original: "/images/hero/hero-3.jpg",
 	},
 	{
 		original: "/images/hero/hero-4.jpg",

@@ -56,7 +56,7 @@ const Contact = () => {
 						<span className='flex flex-row gap-2 items-center justify-center lg:justify-start'>
 							<p className='text-base text-black'>Ahmad |</p>
 							<IoCall className='text-black' />
-							<Link href={"tel:+971585675644"} className='text-base text-black hover:text-green transition-colors duration-300'>
+							<Link href={"tel:+971552782684"} className='text-base text-black hover:text-green transition-colors duration-300'>
 								+971585675644
 							</Link>
 						</span>

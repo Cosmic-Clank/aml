@@ -31,10 +31,18 @@ export default function Testimonials() {
 						},
 					}}
 					showDots
-					dotListClass='[&>*]:[&>*]:bg-gray-600 [&>*]:[&>*]:bg-opacity-50'
 					arrows={false}
 					autoPlay={true}
 					autoPlaySpeed={2000}
+					customDot={
+						<CustomDot
+							index={0}
+							onClick={function (): void {
+								throw new Error("Function not implemented.");
+							}}
+							active={false}
+						/>
+					}
 					infinite={true}
 					className='w-full max-w-7xl'>
 					{testimonials.map((testimonial, index) => (
@@ -108,3 +116,13 @@ const testimonials = [
 		testimonial: '"My husband and i really enjoyed working with <b>Al Madena Landscape</b>. He is very honest and easy to work with. Their team is very talented and has a great vision. He drew up amazing plans for our backyard and front yard, from landscaping and lighting designs..."',
 	},
 ];
+
+interface CustomDotProps {
+	index: number;
+	onClick: () => void;
+	active: boolean;
+}
+
+const CustomDot: React.FC<CustomDotProps> = ({ onClick, active }) => {
+	return <button className={`inline-block mx-2 cursor-pointer w-4 h-4 rounded-full ${active ? "bg-white" : "bg-gray-400"}`} onClick={onClick} />;
+};

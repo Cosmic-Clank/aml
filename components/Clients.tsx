@@ -34,9 +34,18 @@ export default function Clients() {
 				autoPlay={true}
 				autoPlaySpeed={2000}
 				showDots
+				customDot={
+					<CustomDot
+						index={0}
+						onClick={function (): void {
+							throw new Error("Function not implemented.");
+						}}
+						active={false}
+					/>
+				}
 				arrows={false}
 				dotListClass='color-white'
-				className='w-full pb-12 px-6 shadow-none'>
+				className='w-full pb-20 pt-10 px-6 shadow-none'>
 				{Array.from({ length: 20 }).map((_, index) => (
 					<div key={index} className=''>
 						<Card className='border-none rounded-none shadow-none'>
@@ -50,3 +59,13 @@ export default function Clients() {
 		</SectionContainer>
 	);
 }
+
+interface CustomDotProps {
+	index: number;
+	onClick: () => void;
+	active: boolean;
+}
+
+const CustomDot: React.FC<CustomDotProps> = ({ onClick, active }) => {
+	return <button className={`inline-block mx-2 cursor-pointer w-4 h-4 rounded-full border-2 ${active ? "bg-green" : "bg-white"}`} onClick={onClick} />;
+};
