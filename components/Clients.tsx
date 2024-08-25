@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function Clients() {
 	return (
-		<SectionContainer className='w-full bg-white max-w-none px-0'>
+		<SectionContainer className='w-full bg-white pt-10 max-w-none px-0'>
 			<Heading title='Our Clients' subtitle='We are Providing our services to the following companies and our clients in different villa communities in Dubai.' />
 			<Carousel
 				responsive={{

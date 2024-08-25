@@ -44,10 +44,10 @@ const Gallery = () => {
 	);
 };
 
-const itemData = Array.from({ length: 67 }, (_, index) => ({
+const itemData = Array.from({ length: 68 }, (_, index) => ({
 	img: `/images/gallery/${index + 1}.jpg`,
 	title: "Gallery Image",
-	rows: Math.random() > 0.7 ? 2 : 1, // 30% chance to have rows = 2
+	rows: Math.random() > 0.5 ? 2 : 1, // 30% chance to have rows = 2
 	cols: Math.random() > 0.5 ? 2 : 1, // 50% chance to have cols = 2
 }));
 

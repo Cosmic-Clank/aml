@@ -65,19 +65,19 @@ const services = [
 		title: "IRRIGATION",
 		description: "We install and maintain a wide variety of garden irrigation systems, ranging from drip irrigation to more complex sprinkler systems. Whether you are looking for a brand new irrigation system to maintain your lawn or the replacement of a sprinkler head in your current system the experts at AML are one phone-call away.",
 		image1: "/images/services/IRRIGATION.jpg",
-		image2: "/images/services/IRRIGATION.jpg",
+		image2: "/images/services/IRRIGATION 1.jpg",
 	},
 	{
 		title: "TREE TRANSPLANTATION",
 		description: "We have recruited a large scale of experts, developed special techniques and acquired specialized equipment that has qualified us to relocate trees in the UAE with the best success rate.",
 		image1: "/images/services/TREE TRANSPLANT.jpg",
-		image2: "/images/services/TREE TRANSPLANT.jpg",
+		image2: "/images/services/TREE TRANSPLANT 1.jpg",
 	},
 	{
 		title: "SUPPLY PLANTS AND TREES",
 		description: "We provide both the supply & installation of a wide range of indoor plants and planters, whether you’re looking to just add some green to your space or looking to make a statement. We’ve got you covered!",
 		image1: "/images/services/SUPPLY PLANTS.jpg",
-		image2: "/images/services/SUPPLY PLANTS.jpg",
+		image2: "/images/services/SUPPLY PLANTS 1.jpg",
 	},
 	{
 		title: "COMMUNITY MAINTENANCE",
