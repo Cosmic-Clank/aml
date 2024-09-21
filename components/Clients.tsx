@@ -13,27 +13,52 @@ export default function Clients() {
 		<SectionContainer className='w-full bg-white pt-10 max-w-none px-0'>
 			<Heading title='Our Clients' subtitle='We are Providing our services to the following companies and our clients in different villa communities in Dubai.' />
 			<Carousel
+				additionalTransfrom={0}
+				arrows={false}
+				autoPlay
+				customTransition='all 5s linear'
+				draggable={false}
+				focusOnSelect={false}
+				infinite
+				itemClass=''
+				keyBoardControl={false}
+				minimumTouchDrag={80}
+				renderArrowsWhenDisabled={false}
+				renderButtonGroupOutside={false}
+				renderDotsOutside={false}
 				responsive={{
 					desktop: {
-						breakpoint: { max: 3000, min: 1024 },
+						breakpoint: {
+							max: 3000,
+							min: 1024,
+						},
 						items: 4,
-						slidesToSlide: 4, // optional, default to 1.
-					},
-					tablet: {
-						breakpoint: { max: 1024, min: 464 },
-						items: 2,
-						slidesToSlide: 2, // optional, default to 1.
+						partialVisibilityGutter: 40,
 					},
 					mobile: {
-						breakpoint: { max: 464, min: 0 },
-						items: 1,
-						slidesToSlide: 1, // optional, default to 1.
+						breakpoint: {
+							max: 464,
+							min: 0,
+						},
+						items: 2,
+						partialVisibilityGutter: 30,
+					},
+					tablet: {
+						breakpoint: {
+							max: 1024,
+							min: 464,
+						},
+						items: 3,
+						partialVisibilityGutter: 30,
 					},
 				}}
-				infinite={true}
-				autoPlay={true}
-				autoPlaySpeed={2000}
-				showDots
+				rewind={false}
+				rewindWithAnimation={false}
+				rtl={false}
+				showDots={false}
+				sliderClass=''
+				slidesToSlide={2}
+				transitionDuration={1000}
 				customDot={
 					<CustomDot
 						index={0}
@@ -43,9 +68,26 @@ export default function Clients() {
 						active={false}
 					/>
 				}
-				arrows={false}
 				dotListClass='color-white'
 				className='w-full pb-20 pt-10 px-6 shadow-none'>
+				{Array.from({ length: 20 }).map((_, index) => (
+					<div key={index} className=''>
+						<Card className='border-none rounded-none shadow-none'>
+							<CardContent className='flex items-center justify-center p-0'>
+								<Image className='w-auto h-20' alt='logo' src={`/images/logos/${index + 1}.png`} width={300} height={300} />
+							</CardContent>
+						</Card>
+					</div>
+				))}
+				{Array.from({ length: 20 }).map((_, index) => (
+					<div key={index} className=''>
+						<Card className='border-none rounded-none shadow-none'>
+							<CardContent className='flex items-center justify-center p-0'>
+								<Image className='w-auto h-20' alt='logo' src={`/images/logos/${index + 1}.png`} width={300} height={300} />
+							</CardContent>
+						</Card>
+					</div>
+				))}
 				{Array.from({ length: 20 }).map((_, index) => (
 					<div key={index} className=''>
 						<Card className='border-none rounded-none shadow-none'>
