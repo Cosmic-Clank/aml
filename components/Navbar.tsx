@@ -78,49 +78,49 @@ export default function Example() {
 					</div>
 					<ul className='flex flex-col gap-8 text-4xl lg:text-6xl font-bold'>
 						<li>
-							<Link href='#home' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
+							<Link href='/#home' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
 								HOME
 							</Link>
 						</li>
 						<li>
-							<Link href='#about' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
+							<Link href='/#about' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
 								ABOUT
 							</Link>
 						</li>
 						<li>
-							<Link href='#services' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
+							<Link href='/#services' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
 								SERVICES
 							</Link>
 						</li>
 						<li>
-							<Link href='#contact' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
+							<Link href='/#contact' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
 								CONTACT
 							</Link>
 						</li>
 					</ul>
 					<ul className='flex flex-col tracking-widest gap-2 text-lg lg:text-xl'>
 						<li>
-							<Link href='#mission' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
+							<Link href='/#mission' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
 								MISSION
 							</Link>
 						</li>
 						<li>
-							<Link href='#vision' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
+							<Link href='/#vision' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
 								VISION
 							</Link>
 						</li>
 						<li>
-							<Link href='#gallery' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
+							<Link href='/#gallery' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
 								GALLERY
 							</Link>
 						</li>
 						<li>
-							<Link href='#projects' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
+							<Link href='/#projects' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
 								PROJECTS
 							</Link>
 						</li>
 						<li>
-							<Link href='#testimonials' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
+							<Link href='/#testimonials' onClick={() => setIsExpanded(false)} className='transition-transform duration-100 transform hover:translate-x-10 inline-block'>
 								TESTIMONIALS
 							</Link>
 						</li>
