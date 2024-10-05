@@ -28,32 +28,32 @@ const itemData = [
 	{
 		category: "a",
 		image: "/images/projects/A1.jpg",
-		title: "Breakfast",
+		title: "Complete Garden Makeover",
 	},
 	{
 		category: "b",
 		image: "/images/projects/B1.jpg",
-		title: "Breakfast",
+		title: "Plantation Project For Villa Community",
 	},
 	{
 		category: "c",
 		image: "/images/projects/C1.jpg",
-		title: "Breakfast",
+		title: "Dubai Festival City Mall - New Extension",
 	},
 	{
 		category: "d",
 		image: "/images/projects/D1.jpg",
-		title: "Breakfast",
+		title: "Resort Landscape Design & Build Project",
 	},
 	{
 		category: "e",
 		image: "/images/projects/E1.jpg",
-		title: "Breakfast",
+		title: "Children Play Areas For Villa Community",
 	},
 	{
 		category: "f",
 		image: "/images/projects/F1.jpg",
-		title: "Breakfast",
+		title: "Complete Garden Makeover",
 	},
 ];
 
