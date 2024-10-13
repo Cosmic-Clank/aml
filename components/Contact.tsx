@@ -18,17 +18,41 @@ import Link from "next/link";
 import Heading from "./ui/Heading";
 
 const formSchema = z.object({
-	name: z.string().min(2).max(50),
-	email: z.string().email().min(2).max(50),
-	mobile: z.string().min(2).max(50),
-	subject: z.string().min(2).max(50),
-	message: z.string().min(2).max(200),
+	name: z.string({ message: "Please enter a name" }).min(2).max(50),
+	email: z.string({ message: "Please enter a valid email" }).email().min(2).max(50),
+	mobile: z.string({ message: "Please enter a mobile" }).min(2).max(50),
+	subject: z.string({ message: "Please enter a subject" }).min(2).max(50),
+	message: z.string({ message: "Please enter a message" }).min(2).max(200),
 });
 
 const Contact = () => {
 	const form = useForm<z.infer<typeof formSchema>>({
 		resolver: zodResolver(formSchema),
 	});
+	const onSubmit = async (values: z.infer<typeof formSchema>) => {
+		try {
+			// Send a POST request to /api/sendMail with the form data
+			const response = await fetch("/api/sendMail", {
+				method: "POST",
+				headers: {
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify(values), // Convert form values to JSON
+			});
+
+			// Handle the response
+			if (response.ok) {
+				alert("Message sent successfully!"); // Success message
+				form.reset(); // Reset the form fields
+			} else {
+				const errorData = await response.json();
+				alert(`Error: ${errorData.message}`); // Display error message
+			}
+		} catch (error) {
+			console.error("Error sending message:", error);
+			alert("There was an error sending your message. Please try again later.");
+		}
+	};
 	return (
 		<SectionContainer id='contact' className='w-full max-w-none'>
 			<Heading title='Contact Us' />
@@ -144,11 +168,5 @@ const Contact = () => {
 		</SectionContainer>
 	);
 };
-
-function onSubmit(values: z.infer<typeof formSchema>) {
-	// Do something with the form values.
-	// ✅ This will be type-safe and validated.
-	console.log(values);
-}
 
 export default Contact;

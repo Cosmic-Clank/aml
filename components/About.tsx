@@ -2,7 +2,7 @@ import React from "react";
 import SectionContainer from "./ui/SectionContainer";
 import Image from "next/image";
 import Heading from "./ui/Heading";
-import Button from "./ui/ButtonCustom";
+import Link from "next/link";
 
 const grid_images = ["/images/about1.jpg", "/images/about2.jpg", "/images/about3.jpg", "/images/about4.jpg"];
 
@@ -22,7 +22,9 @@ const About = () => {
 					<p className='mt-4'>Our team at am landscape has served different villa communities including individual villas in the UAE. We have provided our quality services to look after their hard and soft scape on annual basis, designing landscapes and turning their gardens into dreamlands.</p>
 					<p className='mt-4'>We will go to any length to achieve the landscape you envisioned. Our systemized care and maintenance programs ensure that it remains in outstanding condition.</p>
 					<p className='mt-4'>That’s our promise!</p>
-					<Button className='mt-10' text='View All Services' />
+					<Link className='px-8 py-4 bg-white hover:bg-green-900 rounded-lg uppercase text-green-900 hover:text-white transition-colors duration-500 border border-gray-700 mt-10' href='#services'>
+						View All Services
+					</Link>
 				</div>
 			</div>
 		</SectionContainer>
