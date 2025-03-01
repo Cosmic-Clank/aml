@@ -86,10 +86,10 @@ const Footer = () => {
 								<Link className='hover:text-green transition-colors duration-300' href={"/"}>
 									CAREERS
 								</Link>
-								<Link className='hover:text-green transition-colors duration-300' href={"/"}>
+								<Link className='hover:text-green transition-colors duration-300' href={"/privacy-policy"}>
 									PRIVACY POLICY
 								</Link>
-								<Link className='hover:text-green transition-colors duration-300' href={"/"}>
+								<Link className='hover:text-green transition-colors duration-300' href={"/tos"}>
 									TERMS OF SERVICE
 								</Link>
 							</div>
